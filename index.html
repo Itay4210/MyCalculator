@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="calculator-frame">
+    <form name="cal">
+        <input type="text" id="display" pattern="^[^×÷]*$">
+        <br><br>
+
+        <input type="button" value="c" onclick="clear_input()">
+        <input type="button" value="(" onclick="add_to_display('(')">
+        <input type="button" value=")" onclick="add_to_display(')')">
+        <input type="button" value="/" onclick="add_to_display('/')">
+        <br>
+        <input type="button" value="7" onclick="add_to_display('7')">
+        <input type="button" value="8" onclick="add_to_display('8')">
+        <input type="button" value="9" onclick="add_to_display('9')">
+        <input type="button" value="*" onclick="add_to_display('*')">
+        <br>
+        <input type="button" value="4" onclick="add_to_display('4')">
+        <input type="button" value="5" onclick="add_to_display('5')">
+        <input type="button" value="6" onclick="add_to_display('6')">
+        <input type="button" value="-" onclick="add_to_display('-')">
+        <br>
+        <input type="button" value="1" onclick="add_to_display('1')">
+        <input type="button" value="2" onclick="add_to_display('2')">
+        <input type="button" value="3" onclick="add_to_display('3')">
+        <input type="button" value="+" onclick="add_to_display('+')">
+        <br>
+        <input type="button" value="0" onclick="add_to_display('0')">
+        <input type="button" value="." onclick="add_to_display('.')">
+        <input type="button" value="^" onclick="add_to_display('^')">
+        <input type="button" value="del" onclick="delete_last()">
+        <input type="button" value="=" onclick="calculate()">
+
+    </form>
+</div>
+</body>
+</html>
